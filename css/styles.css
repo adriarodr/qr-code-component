@@ -1,0 +1,27 @@
+/* Varibles */
+:root {
+
+    /* Colors */
+    --c-neutral-100:  hsl(0, 0%, 100%);
+    --c-neutral-200: hsl(212, 45%, 89%);
+    --c-neutral-300: hsl(220, 15%, 55%);
+
+    --c-primary-700: hsl(218, 44%, 22%);
+
+    /* Typography */
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* Breakpoints */
+    --breakpoint-mobile: 375px;
+    --breakpoint-desktop: 1440px;
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
