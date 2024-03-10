@@ -8,20 +8,101 @@
 
     --c-primary-700: hsl(218, 44%, 22%);
 
+    --c-accent-400: hsl(1, 97%, 38%);
+
     /* Typography */
     --fw-regular: 400;
     --fw-bold: 700;
-
-    /* Breakpoints */
-    --breakpoint-mobile: 375px;
-    --breakpoint-desktop: 1440px;
 }
 
-/* .attribution {
-    font-size: 11px;
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+}
+
+body,
+main,
+footer,
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Mobile Layout */
+
+/* Style Rules for the main content */
+body {
+    background-color: var(--c-neutral-200);
+    color: var(--c-neutral-300);
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9375em;
+    font-weight: var(--fw-regular);
+    padding: 8%;
+}
+
+.qr-card {
+    background-color: var(--c-neutral-100);
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 1px rgba(0,0,0,0.06);
+    -webkit-box-shadow: 0px 25px 25px 1px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 25px 25px 1px rgba(0,0,0,0.06);
+    margin: 0 auto;
+    padding: 1em;
     text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-} */
+.qr-card__image {
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+}
+
+.qr-card p {
+    padding: 0.25em;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.qr-card h1 {
+    color: var(--c-primary-700);
+    font-size: 1.375em;
+    font-weight: var(--fw-bold);
+}
+
+/* Style rules for the footer section */
+.attribution {
+    color: var(--c-primary-700);
+    font-size: 0.875em;
+    padding: 1.5em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.external-link {
+        border-bottom: 2px solid var(--c-accent-400);
+        text-decoration: none;
+        color: var(--c-primary-700)
+}
+
+.external-link:hover {
+        border-bottom: 4px solid var(--c-accent-400);
+        transition: all 0.2s ease;
+}
+
+/* Media Query for Tablet/Desktop Viewport */
+@media screen and (min-width: 450px), print {
+
+    /* Tablet/Desktop Viewport: Style rules for main content*/
+    .qr-card {
+        max-width: 20em;
+    }
+}
