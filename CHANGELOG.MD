@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2024-03-10 (8:40 AM)
+
+### Changed
+- text within CHANGELOG.md
+- Links within README.md
 
 ## [1.1.1] - 2024-03-10 (8:30 AM)
 
@@ -39,12 +44,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - .gitignore file
 - Images to the image folder
 - styles.css file to the css folder
-- index.html file with <main> and <footer> element
+- index.html file with `<main>` and `<footer>` element
 - README-template.md
-- <div> for the QR Code component card
+- `<div>` for the QR Code component card
 - linked image within the QR Code card
 - text with the QR Code Card
-- <h1> for heading hierarchy
-- Attribution to the <footer> section
-- Google Font link in the <head>
+- `<h1>` for heading hierarchy
+- Attribution to the `<footer>` section
+- Google Font link in the `<head>`
 - Variables for the color, font weight and breakpoints within style.css
